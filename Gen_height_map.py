@@ -84,7 +84,8 @@ def gen_height(x,y,lissage):
 
 
 def Diamond(x,y,di,i,height,lissage):
-    """int^4*list(int)*float"""
+    """int^4*list(int)*float
+    retourne la liste apres le proces du Diamond"""
     for x1 in range(di,x,i):
         for y1 in range(di,y,i):
             moyenne = (height[x1-di][y1-di] + height[x1-di][y1+di] + height[x1+di][y1+di] + height[x1-di][y1-di])/4
@@ -92,7 +93,8 @@ def Diamond(x,y,di,i,height,lissage):
     return height
 
 def Square(x,y,di,i,height,lissage):
-        """int^4*list(int)*float"""
+        """int^4*list(int)*float
+        retourne la liste apres le proces du Square"""
         for x1 in range(0,x,di):
             if x1%i == 0:
                 décalage = di
