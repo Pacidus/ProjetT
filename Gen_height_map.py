@@ -61,7 +61,7 @@ def gen_img(List,size,M,m,color,graine,lissage):
                 b,r = 255**(1-((255-g)**2)/2000),255**(1-((255-g)**2)/2000)
         draw.point(point,fill=(int(r),int(g),int(b)))
     img.show()
-    img.save("/home/mahtar_nola/Bureau/Programation/Python/ProjetT/Map/"+name+".png", "PNG")
+    img.save("./"+name+".png", "PNG")
 
     
 def gen_height(x,y,lissage):
